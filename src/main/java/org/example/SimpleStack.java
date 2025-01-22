@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class SimpleStack implements Stack {
 
+    /**
+     * list of the items of the pile
+     */
     private ArrayList<Item> list = new ArrayList<>();
 
     /**
@@ -35,6 +38,8 @@ public class SimpleStack implements Stack {
 
     /**
      * Looks at the object at the top of this stack without removing it from the stack.
+     *
+     * @throws EmptyStackException if this stack is empty.
      */
     @Override
     public Item peek() throws EmptyStackException {

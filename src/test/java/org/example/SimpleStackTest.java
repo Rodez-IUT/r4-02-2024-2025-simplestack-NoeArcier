@@ -47,12 +47,15 @@ class SimpleStackTest {
         assertFalse(stack.isEmpty(), "The stack must be not empty");
         assertEquals(2, stack.getSize(),"The stack must constain 2 items");
         assertSame( item2, stack.peek(),"The pushed item must be on top of the stack");
-        // test premier pop
+        // test first pop
         assertSame(item2, stack.pop(), "Test pop's result");
         assertTrue(stack.getSize() == 1, "Test pop remove item");
         // test second pop
         assertSame(item, stack.pop(), "Test pop's result after pop");
         assertTrue(stack.isEmpty(), "Test pop empties list");
+        // test push null
+        assertDoesNotThrow(()-> stack.push(null));
+        assertEquals(null, stack.pop());
     }
 
     @Test

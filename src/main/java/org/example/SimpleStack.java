@@ -7,7 +7,7 @@ public class SimpleStack implements Stack {
     /**
      * list of the items of the pile
      */
-    private ArrayList<Item> list = new ArrayList<>();
+    private final ArrayList<Item> list = new ArrayList<>();
 
     /**
      * Tests if this stack is empty

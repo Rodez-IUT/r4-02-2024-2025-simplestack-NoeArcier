@@ -38,6 +38,11 @@ public class SimpleStack implements Stack {
      */
     @Override
     public Item peek() throws EmptyStackException {
+
+        if (getSize() == 0) {
+            throw new EmptyStackException();
+        }
+
         return list.get(getSize() - 1);
     }
 
@@ -50,15 +55,11 @@ public class SimpleStack implements Stack {
     @Override
     public Item pop() throws EmptyStackException {
 
-        if (getSize() == 0) {
-            throw new EmptyStackException();
-        }
-
-        Item resultat;
-        resultat = peek();
+        Item result;
+        result = peek();
 
         list.remove(getSize() - 1);
 
-        return resultat;
+        return result;
     }
 }

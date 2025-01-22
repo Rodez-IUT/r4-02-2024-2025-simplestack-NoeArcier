@@ -1,6 +1,9 @@
 package org.example;
 
 public class SimpleStack implements Stack {
+
+
+
     /**
      * Tests if this stack is empty
      */

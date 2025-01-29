@@ -38,8 +38,3 @@ Quelle esl la version de JUnit utilisée par le projet ?
 2.3. Effectuez un _refactoring_ de votre implantation pour améliorer la qualité de votre code.
 
 > fix #2.3 refactoring effectué
-
-
-
-
-

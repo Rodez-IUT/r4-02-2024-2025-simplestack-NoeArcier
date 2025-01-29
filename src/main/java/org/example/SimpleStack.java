@@ -9,6 +9,7 @@ public class SimpleStack implements Stack {
      */
     private final ArrayList<Item> list = new ArrayList<>();
 
+
     /**
      * Tests if this stack is empty
      */
